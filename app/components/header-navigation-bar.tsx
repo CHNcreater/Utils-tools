@@ -10,14 +10,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, LogIn } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function HeaderNavigationBar() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-2 bg-background border-b border-border dark:bg-background-dark dark:border-border-dark">
+    <div className="sticky top-0 left-0 right-0 flex items-center justify-between px-4 py-2 bg-background border-b border-border dark:bg-background-dark dark:border-border-dark">
       <Image
         src="/next.svg"
         alt="Logo"
@@ -53,6 +53,21 @@ export function HeaderNavigationBar() {
         >
           <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+        </Button>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          className="ml-2 bg-ghost-white dark:bg-ghost-white-dark w-16 border-none shadow-none"
+        >
+          Log In
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
+          className="ml-2 bg-ghost-white dark:bg-ghost-white-dark w-16 border-none shadow-none"
+        >
+          Sign Up
         </Button>
       </div>
     </div>

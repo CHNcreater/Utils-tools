@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
 import { HeaderNavigationBar } from "./components/header-navigation-bar";
+import { Footer } from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body>
+        <body className="flex flex-col min-h-screen">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -25,7 +26,8 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <HeaderNavigationBar />
-            {children}
+            <div className="container flex-1">{children}</div>
+            <Footer />
           </ThemeProvider>
         </body>
       </html>
