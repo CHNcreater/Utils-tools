@@ -1,0 +1,23 @@
+{
+  "server-component": {
+    "welcome": "你好，世界！",
+    "description": "这是一个服务器组件。"
+  },
+  "header": {
+    "menu": {
+        "home": "首页",
+        "about": "关于",
+        "contact": "联系我们",
+        "components": "组件",
+        "docs": "文档"
+    },
+    "auth": {
+        "login": "登陆",
+        "register": "注册"
+    }
+  },
+  "introduction": {
+    "title": "欢迎来到我们的网站",
+    "description": "这是我们网站的首页。探索我们的组件和文档。"
+  }
+}

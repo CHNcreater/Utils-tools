@@ -1,0 +1,23 @@
+{
+  "server-component": {
+    "welcome": "Hello, World!",
+    "description": "This is a server component."
+  },
+  "header": {
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "components": "Components",
+        "docs": "Docs"
+    },
+    "auth": {
+        "login": "Login",
+        "register": "Register"
+    }
+  },
+  "introduction": {
+    "title": "Welcome to Our Website",
+    "description": "This is the home page of our website. Explore our components and documentation."
+  }
+}
