@@ -5,15 +5,20 @@
   },
   "header": {
     "menu": {
-        "home": "首页",
-        "about": "关于",
-        "contact": "联系我们",
-        "components": "组件",
-        "docs": "文档"
+      "home": "首页",
+      "about": "关于",
+      "contact": "联系我们",
+      "components": "组件",
+      "docs": "文档",
+      "tools": "工具"
     },
     "auth": {
-        "login": "登陆",
-        "register": "注册"
+      "login": "登陆",
+      "register": "注册"
+    },
+    "languages": {
+      "en-US": "英语",
+      "zh-CN": "中文（简体）"
     }
   },
   "introduction": {

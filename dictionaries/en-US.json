@@ -5,15 +5,20 @@
   },
   "header": {
     "menu": {
-        "home": "Home",
-        "about": "About",
-        "contact": "Contact",
-        "components": "Components",
-        "docs": "Docs"
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "components": "Components",
+      "docs": "Docs",
+      "tools": "Tools"
     },
     "auth": {
-        "login": "Login",
-        "register": "Register"
+      "login": "Login",
+      "register": "Register"
+    },
+    "languages": {
+      "en-US": "English",
+      "zh-CN": "Chinese (Simplified)"
     }
   },
   "introduction": {

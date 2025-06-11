@@ -5,6 +5,7 @@ import { i18n, Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { Footer } from "./components/footer";
 import { HeaderNavigationBar } from "./components/header-navigation-bar";
+import { useRouter } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +23,7 @@ export default async function RootLayout(props: {
   const params = await props.params;
   const { children } = props;
   const dictionary = await getDictionary(params.lang);
+  const router = useRouter();
 
   return (
     <>
@@ -34,7 +36,7 @@ export default async function RootLayout(props: {
             enableSystem
             disableTransitionOnChange
           >
-            <HeaderNavigationBar dictionary={dictionary.header} />
+            <HeaderNavigationBar dictionary={dictionary.header} router={router} />
             <div className="flex flex-1 justify-center">{children}</div>
             <Footer />
           </ThemeProvider>
