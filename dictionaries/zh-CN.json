@@ -24,5 +24,8 @@
   "introduction": {
     "title": "欢迎来到我们的网站",
     "description": "这是我们网站的首页。探索我们的组件和文档。"
+  },
+  "tools": {
+    "title": "欢迎来到工具页面"
   }
 }

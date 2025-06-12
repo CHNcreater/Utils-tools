@@ -24,5 +24,8 @@
   "introduction": {
     "title": "Welcome to Our Website",
     "description": "This is the home page of our website. Explore our components and documentation."
+  },
+  "tools": {
+    "title": "Welcome to Tools Page"
   }
 }

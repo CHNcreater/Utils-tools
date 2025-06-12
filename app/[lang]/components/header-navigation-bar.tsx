@@ -19,22 +19,22 @@ import * as React from "react";
 import { Moon, Sun, Languages } from "lucide-react";
 import { useTheme } from "next-themes";
 import { type getDictionary } from "@/get-dictionary";
-import { useRouter } from "next/router";
+import { useRouter, useParams, usePathname } from "next/navigation";
 
 export function HeaderNavigationBar({
   dictionary,
-  router
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["header"];
-  router: ReturnType<typeof useRouter>;
 }) {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
+  const params = useParams();
+  const currentLanguage = params.lang as string;
+  const currentPath = usePathname();
 
-  const currentLanguage = router.locale;
   const handleLanguageChange = (lang: string) => {
-    const currentPath = router.asPath;
-    if (currentLanguage === lang) return;
-    const newPath = currentPath.replace(currentLanguage ?? "", lang);
+    if (currentLanguage === lang || !currentLanguage) return;
+    const newPath = currentPath.replace(currentLanguage, lang);
     router.push(newPath);
   };
 
@@ -54,7 +54,7 @@ export function HeaderNavigationBar({
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="/tools">{dictionary.menu.tools}</Link>
+              <Link href={`${currentLanguage}/tools`}>{dictionary.menu.tools}</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
