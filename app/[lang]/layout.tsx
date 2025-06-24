@@ -35,7 +35,7 @@ export default async function RootLayout(props: {
             disableTransitionOnChange
           >
             <HeaderNavigationBar dictionary={dictionary.header} />
-            <div className="flex flex-1 justify-center">{children}</div>
+            <main className="flex flex-1 justify-center">{children}</main>
             <Footer />
           </ThemeProvider>
         </body>

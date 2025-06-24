@@ -39,7 +39,7 @@ export function HeaderNavigationBar({
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 flex items-center justify-between px-4 py-2 bg-background border-b border-border dark:bg-background-dark dark:border-border-dark">
+    <div className="h-[var(--header-height)] sticky top-0 left-0 right-0 flex items-center justify-between px-4 py-2 bg-background border-b border-border dark:bg-background-dark dark:border-border-dark">
       <Link href="/">
         <Image
           src="/next.svg"

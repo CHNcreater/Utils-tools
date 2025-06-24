@@ -3,11 +3,9 @@ import { AppSidebar } from "../components/app-sidebar";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-      <SidebarProvider defaultOpen={true}>
-        <AppSidebar />
-        <main>
-          {children}
-        </main>
-      </SidebarProvider>
+    <SidebarProvider defaultOpen={true}>
+      <AppSidebar />
+      <div>{children}</div>
+    </SidebarProvider>
   );
 }
