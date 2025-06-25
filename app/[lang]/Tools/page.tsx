@@ -10,7 +10,7 @@ export default async function Tools({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-full">
       <h1 className="text-2xl font-bold">{dictionary.tools.title}</h1>
     </div>
   );

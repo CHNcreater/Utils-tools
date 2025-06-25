@@ -8,7 +8,7 @@ import {
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="sticky">
       <SidebarContent>
       </SidebarContent>
     </Sidebar>

@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider defaultOpen={true}>
       <AppSidebar />
-      <div>{children}</div>
+      <div className="h-full">{children}</div>
     </SidebarProvider>
   );
 }
