@@ -26,6 +26,18 @@
     "description": "这是我们网站的首页。探索我们的组件和文档。"
   },
   "tools": {
-    "title": "欢迎来到工具页面"
+    "title": "欢迎来到工具页面",
+    "cards": [
+      {
+        "title": "GUID/UUID生成器",
+        "description": "帮助用户生成随机的GUID/UUID.",
+        "link": "/tools/uuid"
+      },
+      {
+        "title": "JSON格式化工具",
+        "description": "格式化和验证您的JSON数据。",
+        "link": "/tools/json-formatter"
+      }
+    ]
   }
 }

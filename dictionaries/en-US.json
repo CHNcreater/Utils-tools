@@ -26,6 +26,18 @@
     "description": "This is the home page of our website. Explore our components and documentation."
   },
   "tools": {
-    "title": "Welcome to Tools Page"
+    "title": "Welcome to Tools Page",
+    "cards": [
+      {
+        "title": "GUID/UUID Generator",
+        "description": "Generate unique identifiers easily.",
+        "link": "/tools/uuid"
+      },
+      {
+        "title": "JSON Formatter",
+        "description": "Format and validate your JSON data.",
+        "link": "/tools/json-formatter"
+      }
+    ]
   }
 }
