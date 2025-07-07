@@ -29,11 +29,13 @@
     "title": "Welcome to Tools Page",
     "cards": [
       {
+        "id": "1",
         "title": "GUID/UUID Generator",
         "description": "Generate unique identifiers easily.",
         "link": "/tools/uuid"
       },
       {
+        "id": "2",
         "title": "JSON Formatter",
         "description": "Format and validate your JSON data.",
         "link": "/tools/json-formatter"

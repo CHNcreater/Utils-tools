@@ -29,11 +29,13 @@
     "title": "欢迎来到工具页面",
     "cards": [
       {
+        "id": "1",
         "title": "GUID/UUID生成器",
         "description": "帮助用户生成随机的GUID/UUID.",
         "link": "/tools/uuid"
       },
       {
+        "id": "2",
         "title": "JSON格式化工具",
         "description": "格式化和验证您的JSON数据。",
         "link": "/tools/json-formatter"

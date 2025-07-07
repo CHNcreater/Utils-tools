@@ -14,7 +14,16 @@ export default async function Tools({
     <div className="flex flex-col items-center h-full">
       <h1 className="text-2xl font-bold">{dictionary.tools.title}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl p-4">
-        <ToolCard />
+        {dictionary.tools.cards.map((tool) => {
+          return (
+            <ToolCard
+              key={tool.id}
+              title={tool.title}
+              description={tool.description}
+              href={tool.link}
+            />
+          );
+        })}
       </div>
     </div>
   );
